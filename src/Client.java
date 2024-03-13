@@ -20,8 +20,14 @@ public class Client {
         System.out.println("정렬할 숫자들을 입력해주세요 : (ex. 1 2 3 4 5 6)");
         st = new StringTokenizer(br.readLine());
 
-        for (int i = 0; i < numCount; i++) {
-            numList.add(Integer.parseInt(st.nextToken()));
+        try {
+            for (int i = 0; i < numCount; i++) {
+                numList.add(Integer.parseInt(st.nextToken()));
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Abnormal : 입력한 숫자의 개수가 부족합니다!");
+            return;
         }
 
         // 숫자 List 입력

@@ -1,15 +1,14 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class SortPrinterMachine {
     ArrayList<Integer> numList;
-    SortPrinter printer;
+    SortModule printer;
 
     public void insert(ArrayList<Integer> numList) {
         this.numList = numList;
     }
 
-    public void selection(SortPrinter printer) {
+    public void selection(SortModule printer) {
         this.printer = printer;
     }
 
