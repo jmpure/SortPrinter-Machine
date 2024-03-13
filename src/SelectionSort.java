@@ -12,11 +12,6 @@ public class SelectionSort implements Sort {
                 }
             }
         }
-    }
-
-    @Override
-    public void show(ArrayList<Integer> numList) {
-        System.out.println("[[SelectionSort Result]]");
-        System.out.println(numList);
+        System.out.println("[[SelectionSort Complete!!]]");
     }
 }

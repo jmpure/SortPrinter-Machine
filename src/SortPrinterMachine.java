@@ -5,9 +5,8 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class SortPrinterMachine {
-    private ArrayList<Integer> numList = new ArrayList<>();
+    private final ArrayList<Integer> numList = new ArrayList<>();
     private Sort printer;
-    private int sortType;
     BufferedReader br;
     StringTokenizer st;
 
@@ -39,7 +38,7 @@ public class SortPrinterMachine {
         System.out.println("정렬 방법을 선택해주세요 : (1:Bubble Sort, 2:Selection Sort)");
         st = new StringTokenizer(br.readLine());
 
-        sortType = Integer.parseInt(st.nextToken());
+        int sortType = Integer.parseInt(st.nextToken());
 
         switch (sortType) {
             case 1:
@@ -59,6 +58,6 @@ public class SortPrinterMachine {
     }
 
     public void show() {
-        printer.show(numList);
+        System.out.println(numList);
     }
 }

@@ -13,11 +13,6 @@ public class BubbleSort implements Sort {
                 }
             }
         }
-    }
-
-    @Override
-    public void show(ArrayList<Integer> numList) {
-        System.out.println("[[BubbleSort Result]]");
-        System.out.println(numList);
+        System.out.println("[[BubbleSort Complete!!]]");
     }
 }
