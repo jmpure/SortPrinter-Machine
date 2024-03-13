@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class BubbleSort implements SortModule {
+public class BubbleSort implements Sort {
     @Override
     public void run(ArrayList<Integer> numList) {
         for(int cycle = 0 ;cycle < numList.size(); cycle ++) {

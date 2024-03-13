@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class SortPrinterMachine {
     private ArrayList<Integer> numList = new ArrayList<>();
-    private SortModule printer;
+    private Sort printer;
     private int sortType;
     BufferedReader br;
     StringTokenizer st;

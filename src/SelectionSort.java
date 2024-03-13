@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class SelectionSort implements SortModule {
+public class SelectionSort implements Sort {
     @Override
     public void run(ArrayList<Integer> numList) {
         for(int i = 0 ; i < numList.size(); i++) {
