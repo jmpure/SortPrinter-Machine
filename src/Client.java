@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Client {
@@ -42,8 +41,8 @@ public class Client {
                 sortMachine.selection(new SelectionSort());
                 break;
             default:
-                sortMachine.selection(new BubbleSort());
-                break;
+                System.out.println("현재 지원하지 않는 정렬 방법입니다.");
+                return;
         }
 
         // Sort 알고리즘 수행
