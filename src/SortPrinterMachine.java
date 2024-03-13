@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class SortPrinterMachine {
-    ArrayList<Integer> numList;
-    SortModule printer;
+    private ArrayList<Integer> numList;
+    private SortModule printer;
 
     public void insert(ArrayList<Integer> numList) {
         this.numList = numList;
